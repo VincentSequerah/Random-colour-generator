@@ -1,11 +1,19 @@
-const hexValues = [0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F];
+const hexValues = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
 
-const changeColour =document.getElementById(#changeColour);
+const changeColour = document.getElementById("changeColour");
+const currentColour = document.getElementById('currentColour');
 
-Function valueSelector ()
-A= math.floor(Math.random()*15);
+changeColour.addEventListener('click', function () {
+    
+let newColour = '#';
+    for (let i=0; i<6; i++ ){
+        const randomNumber = Math.floor(Math.random()*hexValues.length);
 
-hexValues[A]
+        newColour +=hexValues[randomNumber]; 
+    }
 
 
-console.log values
+
+document.body.style.backgroundColor=newColour;
+currentColour.innerText=newColour;
+});

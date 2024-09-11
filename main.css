@@ -1,16 +1,27 @@
 *{
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
+    font-size: 15px;
 }
 
-div {
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;   
 }
+#button{
+    display: flex;
+    justify-content: center;
+}
+#changeColour, #copyColour{
+    border-radius: 10px;
+    margin: 0 5px;
+}
 
-button{
-    border-radius: 5px;
+@media only screen and (min-width: 400px){
+*{
+    font-size: 1rem;
+}
 }

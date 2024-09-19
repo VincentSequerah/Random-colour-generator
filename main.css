@@ -25,3 +25,36 @@ body {
     font-size: 1rem;
 }
 }
+
+
+/*add home button and animation*/
+
+#home-button{
+    background-color: #146C94;
+    color: #F6F1F1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    align-content: center;
+    text-align: center;
+    display:block;
+    aspect-ratio: 1/1;
+    width:min-content;
+    padding: 2px;
+    border-radius: 50%;
+    position: fixed;
+    top: 10px;
+    left:10px ;
+    font-size: 14px;
+
+
+}
+
+#home-button:hover {
+    background-color: #19A7CE;
+    color: black;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+#home-button:active{
+    transform: scale(.9);
+}

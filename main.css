@@ -45,6 +45,7 @@ body {
     top: 10px;
     left:10px ;
     font-size: 14px;
+    border: 1px solid black;
 
 
 }
@@ -57,4 +58,14 @@ body {
 
 #home-button:active{
     transform: scale(.9);
+}
+
+
+#snackbar{
+    visibility: hidden;
+}
+
+#snackbar.show{
+    visibility: visible;
+    text-align: center;
 }

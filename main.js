@@ -1,6 +1,6 @@
 const hexValues = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
 
-const changeColour = document.getElementById("changeColour");
+const changeColour = document.getElementById('changeColour');
 const currentColour = document.getElementById('currentColour');
 let newColour= '#FFFFFF';
 
@@ -21,4 +21,8 @@ currentColour.innerText=newColour;
 
 copyColour.addEventListener('click', function(){      //copy colour
     navigator.clipboard.writeText(newColour);
+    let snackbar=document.getElementById('snackbar');
+    snackbar.className ='show';
+    setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 2000);  //display snackbar for 2s
+    
 });
